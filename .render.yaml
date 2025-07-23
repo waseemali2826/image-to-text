@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: image-caption-api
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: TRANSFORMERS_CACHE
+        value: /opt/render/project/.cache
